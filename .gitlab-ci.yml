@@ -7,6 +7,8 @@ rust-latest:
     script:
         - cargo build --verbose
         - cargo test --verbose
+    tags:
+        - share
 
 rust-nightly:
     stage: build
@@ -15,3 +17,5 @@ rust-nightly:
         - cargo build --verbose
         - cargo test --verbose
     allow_failure: true
+    tags:
+        - share
